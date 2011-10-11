@@ -6,21 +6,22 @@
  */
 
 public class Problem2 {
-	public static void main( String[]args ) {
+	public static void main( String[] args ) {
 		//Can be anything, really doesnt matter as the if statement checks to see if it is less than 4 mil
 		//I did cheat a bit here and experimented seeing which fib number passes 4 mil and it happens to be 34
 		//Hence the real number we need it 33
 		int n = 40;
 		long FibSumEven = 0;
 		for( int i = 0; i <= n; i++ ) {
-			if( Fibionacci(i) < 4000000 && Fibionacci(i)%2 == 0 ) { 
-				FibSumEven = FibSumEven + Fibionacci(i);
+			long currFib = Fibionacci( i );
+			if( currFib < 4000000 && currFib%2 == 0 ) { 
+				FibSumEven = FibSumEven + currFib;
 			}
 		}
-		System.out.println(FibSumEven);
+		System.out.println( FibSumEven );
 	}
 	
-	public static long Fibionacci(int n) {
+	public static long Fibionacci( int n ) {
 		if( n == 0 ) {
 			return 0;
 		} else if( n == 1 ) {

@@ -5,15 +5,15 @@
 
 public class Problem1 {
 
-	public static void main( String[]args) {
+	public static void main( String[] args ) {
 		int sumHolder = 0;
 		int i = 2;
 		while( i < 1000 ) {
-			if( i%3 == 0 || i%5 == 0) {
+			if( i%3 == 0 || i%5 == 0 ) {
 				sumHolder = sumHolder + i;
 			}
 			i++;
 		}
-		System.out.println(sumHolder);
+		System.out.println( sumHolder );
 	}
 }
