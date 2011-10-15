@@ -6,7 +6,7 @@
  */
 
 public class Problem2 {
-	public static void main( String[] args ) {
+	public static void main( String [] args ) {
 		//Can be anything, really doesnt matter as the if statement checks to see if it is less than 4 mil
 		//I did cheat a bit here and experimented seeing which fib number passes 4 mil and it happens to be 34
 		//Hence the real number we need it 33
